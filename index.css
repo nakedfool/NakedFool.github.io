@@ -1,5 +1,10 @@
+
 .main {
 	margin-top: 15%;
+}
+
+.muzika {
+    visibility: hidden;
 }
 
 .st0 {
