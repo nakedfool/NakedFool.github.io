@@ -12,7 +12,6 @@
 <div class="placement">
     <div class="heart"></div>
 </div>
-<!--<embed src="ZivoMe.mp3" style="visibility: hidden; width: 0px; height: 0px" autostart="true" loop="true">-->
 <div class="main">
 <div>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 355">
@@ -305,7 +304,10 @@
     var sound = new Howl({
         src: ['ZivoMe.mp3'],
         autoplay: true,
-        loop: true
+        loop: true,
+        onend: function() {
+            sound.play();
+        }
     });
 
      sound.play();
